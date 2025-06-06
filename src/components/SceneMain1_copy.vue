@@ -66,8 +66,8 @@ const isSet5 = ref(kolekcja_widoków_kostki[4])
 const isSet6 = ref(kolekcja_widoków_kostki[5])
 
 //pozycja pionka
-const pionek_left = ref(30)
-const pionek_top = ref(330)
+const pionek_left = ref(20)
+const pionek_top = ref(220)
 
 const mapa_pozycji_pionka = new PawnMaps()
 
@@ -264,9 +264,9 @@ const odejmijSzanse = () => {
 <style scoped>
 .tlo2 {
     background-image: url("../assets/plansza_poziom1.png");
-    background-size: 1920px 1080px;
-    height:1080px;
-    width: 1920px;
+    background-size: 1280px 720px;
+    height: 720px;
+    width: 1280px;
     top: 0px;
     left: 0px;
     position: absolute;
@@ -274,22 +274,22 @@ const odejmijSzanse = () => {
 
 .pionek1 {
     background-image: url("../assets/pionek1.png");
-    background-size: 116px 116px;
+    background-size: 80px 80px;
     background-repeat: no-repeat;
-    height: 116px;
-    width: 116px;
+    height: 80px;
+    width: 80px;
     position: absolute;
 
 }
 
 .kostka1 {
 
-    background-size: 250px 250px;
+    background-size: 150px 150px;
     background-repeat: no-repeat;
-    left: 1549px;
-    top: 687px;
-    height: 250px;
-    width: 250px;
+    left: 1041px;
+    top: 467px;
+    height: 150px;
+    width: 150px;
     position: absolute;
     z-index: 2;
 }
@@ -320,12 +320,12 @@ const odejmijSzanse = () => {
 
 .rzut1 {
     background-image: url("../assets/rzut_przycisk.png");
-    background-size: 333px 86px;
+    background-size: 251px 65px;
     background-repeat: no-repeat;
-    top: 560px;
-    left: 1502px;
-    height: 88px;
-    width: 333px;
+    top: 367px;
+    left: 988px;
+    height: 67px;
+    width: 251px;
     position: absolute;
     z-index: 2;
 }
@@ -340,27 +340,27 @@ const odejmijSzanse = () => {
 
 .szansa_ksztalt1 {
     background-image: url("../assets/zycie1.png");
-    background-size: 72px 72px;
+    background-size: 67px 67px;
     background-repeat: no-repeat;
 
-    height: 72px;
-    width: 72px;
+    height: 67px;
+    width: 67px;
     position: absolute;
     z-index: 2;
 }
 
 .szansa1 {
-    top: 387px;
-    left: 1530px;
+    top: 267px;
+    left: 980px;
 }
 
 .szansa2 {
-    top: 387px;
-    left: 1630px;
+    top: 267px;
+    left: 1080px;
 }
 
 .szansa3 {
-    top: 387px;
-    left: 1730px;
+    top: 267px;
+    left: 1180px;
 }
 </style>

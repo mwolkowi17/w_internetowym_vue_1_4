@@ -12,22 +12,22 @@ defineEmits(['koniec-instrukcja'])
 <style>
 .tlo1{
     background-image: url("../assets/plansza_zasady_gry.png");
-    background-size: 1280px 720px;
-    height: 720px;
-    width: 1280px;
+    background-size: 1920px 1080px;
+    height: 1080px;
+    width: 1920px;
     top:0px;
     left: 0px;
     position: absolute;
 }
 .dalej{
     background-image: url("../assets/przycisk_dalej_imie.png");
-    background-size: 170px 75px;
-    background-position: -1px -5px;
+    background-size: 301px 117px;
+    background-position: -1px -1px;
     position: absolute;
-    top: 550px;
-    left: 580px;
-    width: 171px;
-    height: 68px;
+    top: 820px;
+    left: 850px;
+    width: 301px;
+    height: 117px;
 }
 .dalej:hover{
     cursor: pointer;

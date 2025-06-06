@@ -34,50 +34,25 @@ function openFullscreen() {
 
 .tlo {
     background-image: url("../assets/plansza_start.png");
-    background-size: 1280px 720px;
-    height: 720px;
-    width: 1280px;
+    background-size: 1920px 1080px;
+    height: 1080px;
+    width:1920px;
     top: 0px;
     left: 0px;
     position: absolute;
 }
 
-/* .tlo {
-    background-image: url("../assets/plansza_start.png");
-    background-size: cover;
-    background-position: center;
-    aspect-ratio: 16/9;
-    height: 100vh;
-    width: auto;
-    max-width: 100vw;
-    top: 0px;
-    left: 0px;
-    position: absolute;
-} */
-
-/* było: .tlo  */
-/* :fullscreen body,
-:-webkit-full-screen body {
-    width: 100vw !important;
-    height: 100vh !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-    z-index: 9999;
-} */
 
 .start {
     background-image: url("../assets/START_przycisk.png");
-    background-size: 243px 112px;
-    background-position: -3px -8px;
+    background-size: 432px 168px;
+    background-position: -2px -3px; 
     background-repeat: no-repeat;
     position: absolute;
-    top: 400px;
-    left: 500px;
-    width: 240px;
-    height: 100px;
+    top: 600px;
+    left: 720px;
+    width: 432px;
+    height: 168px;
     
 
 }

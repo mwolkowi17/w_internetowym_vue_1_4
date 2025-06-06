@@ -12,22 +12,22 @@ defineEmits(['wybor-levelu1']);
 <style scoped>
 .tlo-level1 {
  background-image: url("../assets/plansza_poziom1_wybor.png");
-    background-size: 1280px 720px;
-    height: 720px;
-    width: 1280px;
+    background-size: 1920px 1080px;
+    height: 1080px;
+    width: 1920px;
     top:0px;
     left: 0px;
     position: absolute;
 }
 .level-one-button {
    background-image: url("../assets/poziom1_button.png");
-    background-size: 390px 130px;
-    background-position: -2px -1px;
+    background-size: 595px 200px;
+    background-position: -1px -1px;
     position: absolute;
-    top: 295px;
-    left: 180px;
-    width: 390px;
-    height: 130px;
+    top: 438px;
+    left: 220px;
+    width: 595px;
+    height: 200px;
 }
 .level-one-button:hover {
     cursor: pointer;
@@ -38,12 +38,12 @@ defineEmits(['wybor-levelu1']);
 
 .level-two-button{
     background-image: url("../assets/poziom2_nieaktywny_popr.png");
-    background-size: 392px 130px;
+    background-size: 595px 200px;
     background-position: -2px -1px;
     position: absolute;
-    top: 295px;
-    left: 712px;
-    width: 392px;
-    height: 130px;
+    top: 438px;
+    left: 1063px;
+    width: 595px;
+    height: 200px;
 }
 </style>

@@ -6,8 +6,8 @@ import MainComp from './components/MainComp.vue'
 const scale = ref(1)
 
 function updateScale() {
-  const widthRatio = window.innerWidth / 1280
-  const heightRatio = window.innerHeight / 720
+  const widthRatio = window.innerWidth / 1920
+  const heightRatio = window.innerHeight / 1080
   scale.value = Math.min(widthRatio, heightRatio)
 }
 
