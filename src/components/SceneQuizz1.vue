@@ -137,13 +137,13 @@ function sprawdzOdpowiedz() {
 <style scoped>
 .planszaQuizz1 {
 
-  background-size: 935px 600px;
+  background-size: 1411px 896px;
   background-repeat: no-repeat;
-  height: 600px;
-  width: 935px;
+  height: 896px;
+  width: 1411px;
   position: absolute;
   left: 0px;
-  top: 60px;
+  top: 100px;
 }
 
 .planszaQuizz1nr1 {
@@ -189,13 +189,13 @@ function sprawdzOdpowiedz() {
 
 .pytanie1 {
   color: rgb(29, 56, 80);
-  font-size: 30px;
+  font-size: 42px;
   font-style: bold;
   font-weight: 700;
   font-family: "Proxima Nova", sans-serif;
   position: absolute;
-  top: 195px;
-  left: 124px;
+  top: 305px;
+  left: 190px;
 }
 
 .pole-zazn {
@@ -203,8 +203,8 @@ function sprawdzOdpowiedz() {
   background-size: 50px 50px;
   background-repeat: no-repeat; */
   border: rgb(29, 56, 80) solid 2px;
-  height: 50px;
-  width: 50px;
+  height: 81px;
+  width: 81px;
   position: absolute;
 
 }
@@ -218,42 +218,42 @@ function sprawdzOdpowiedz() {
 }
 
 .pole1 {
-  left: 130px;
-  top: 305px;
+  left: 200px;
+  top: 455px;
 }
 
 .pole2 {
-  left: 130px;
-  top: 385px;
+  left: 200px;
+  top: 585px;
 }
 
 
 .krzyzyk {
   background-image: url("../assets/krzyzyk1.png");
-  background-size: 40px 40px;
+  background-size: 73px 73px;
   background-repeat: no-repeat;
-  height: 40px;
-  width: 40px;
+  height: 73px;
+  width: 73px;
   position: absolute;
   visibility: hidden;
   z-index: 1;
 }
 
 .krzyzyk1 {
-  top: 310px;
-  left: 135px;
+  top: 458px;
+  left: 204px;
   visibility: visible;
 }
 
 .krzyzyk2 {
-  top: 390px;
-  left: 135px;
+  top: 588px;
+  left: 204px;
   visibility: visible;
 }
 
 .odpowiedz {
   color: rgb(29, 56, 80);
-  font-size: 30px;
+  font-size: 42px;
   font-style: bold;
   font-weight: 700;
   font-family: "Proxima Nova", sans-serif;
@@ -262,23 +262,23 @@ function sprawdzOdpowiedz() {
 }
 
 .odpowiedz1 {
-  top: 280px;
-  left: 200px;
+  top: 423px;
+  left: 300px;
 }
 
 .odpowiedz2 {
-  top: 360px;
-  left: 200px;
+  top: 552px;
+  left: 300px;
 }
 
 .button-dalej {
   background-image: url("../assets/sprawdź_odpwowiedz_button1.png");
-  background-size: 280px 65px;
+  background-size: 394px 87px;
   background-repeat: no-repeat;
-  top: 490px;
-  left: 200px;
-  height: 67px;
-  width: 280px;
+  top: 760px;
+  left: 300px;
+  height: 87px;
+  width: 394px;
   position: absolute;
   z-index: 2;
 }
@@ -294,35 +294,35 @@ function sprawdzOdpowiedz() {
 
 .plansza-dobrze {
   background-image: url("../assets/KOMUNIKAT_dobra_odp.png");
-  background-size: 862px 380px;
+  background-size: 1212px 533px;
   background-repeat: no-repeat;
-  height: 380px;
-  width: 862px;
+  height: 533px;
+  width: 1212px;
   position: absolute;
-  left: 43px;
-  top: 170px;
+  left: 83px;
+  top: 275px;
 }
 
 .plansza-zle {
   background-image: url("../assets/KOMUNIKAT_zla_odp.png");
-  background-size: 862px 380px;
+  background-size: 1212px 533px;
   background-repeat: no-repeat;
-  height: 380px;
-  width: 862px;
+  height: 533px;
+  width: 1212px;
   position: absolute;
-  left: 43px;
-  top: 170px;
+  left: 83px;
+  top: 275px;
 }
 
 .button-dalej-dobrze {
   background-image: url("../assets/przycisk_dalej_imie.png");
-  background-size: 154px 65px;
-  background-position: -1px -5px;
+  background-size: 301px 117px;
+  background-position: -2px -1px;
   background-repeat: no-repeat;
-  top: 430px;
-  left: 370px;
-  height: 58px;
-  width: 154px;
+  top: 630px;
+  left: 535px;
+  height: 117px;
+  width: 301px;
   position: absolute;
   z-index: 2;
 }

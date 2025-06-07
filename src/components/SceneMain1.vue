@@ -69,6 +69,11 @@ const isSet6 = ref(kolekcja_widoków_kostki[5])
 const pionek_left = ref(30)
 const pionek_top = ref(330)
 
+//roboczo do ustaewienia pozycji pionka
+// const pionek_left = ref(pozycje_pionka_gracza1[15][0])
+// const pionek_top = ref(pozycje_pionka_gracza1[15][1])
+
+
 const mapa_pozycji_pionka = new PawnMaps()
 
 //flaga true/false pokazująca czy gracz nr 1 nie przeszedł całej planszy, wartość falsce wskazuje zakończenie ruchu na planszy
@@ -120,6 +125,11 @@ function kostka_click() {
 
             pionek_left.value = arg_B[arg_C.value + i][0]
             pionek_top.value = arg_B[arg_C.value + i][1]
+
+            //robocze ustawienie pozycji pionka na planszy dla celów ustwień bibliotek
+            // pionek_left.value = arg_B[1][0]
+            // pionek_top.value = arg_B[1][1]
+
 
             //console.log(arg_B)
             console.log(arg_C.value)

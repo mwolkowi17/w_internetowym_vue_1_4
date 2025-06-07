@@ -16,9 +16,9 @@ defineEmits(['gram-dalej','koniec-gry']);
 
 .plansza-win-level-one {
     background-image: url("../assets/ukonczenie_poziomu1.png");
-    background-size: 1280px 720px;
-    height: 720px;
-    width: 1280px;
+    background-size: 1920px 1080px;
+    height: 1080px;
+    width:1920px;
     top: 0px;
     left: 0px;
     position: absolute;
@@ -43,13 +43,13 @@ defineEmits(['gram-dalej','koniec-gry']);
 }   
 .zakoncz-gre{
     background-image: url("../assets/zakoncz_gre_button.png");
-    background-size: 265px 98px;
-    background-position: -1px -2px;
+    background-size: 583px 192px;
+    background-position: -1px -1px;
     position: absolute;
-    top: 450px;
-    left: 720px;
-    width: 265px;
-    height: 96px;
+    top: 650px;
+    left: 920px;
+    width: 583px;
+    height: 192px;
     z-index: 3;
 }
 .zakoncz-gre:hover {
