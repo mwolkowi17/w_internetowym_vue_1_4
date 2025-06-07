@@ -17,9 +17,9 @@ defineEmits(['jeszcze-raz','koniec-gry']);
 <style scoped>
 .plansza-win {
     background-image: url("../assets/zakonczenie_gry_plansza.png");
-    background-size: 1280px 720px;
-    height: 720px;
-    width: 1280px;
+    background-size: 1920px 1080px;
+    height: 1080px;
+    width: 1920px;
     top: 0px;
     left: 0px;
     position: absolute;
@@ -27,13 +27,13 @@ defineEmits(['jeszcze-raz','koniec-gry']);
 }
 .gram-jeszcze-1{
     background-image: url("../assets/gram_jeszcze_raz_button.png");
-    background-size: 265px 98px;
+    background-size: 583px 192px;
     background-position: -1px -2px;
     position: absolute;
-    top: 450px;
-    left: 280px;
-    width: 265px;
-    height: 96px;
+    top: 650px;
+    left: 300px;
+    width: 583px;
+    height: 192px;
     z-index: 3;
 }
 .gram-jeszcze-1:hover {
@@ -44,13 +44,13 @@ defineEmits(['jeszcze-raz','koniec-gry']);
 }   
 .zakoncz-gre{
     background-image: url("../assets/zakoncz_gre_button.png");
-    background-size: 265px 98px;
+    background-size: 583px 192px;
     background-position: -1px -2px;
     position: absolute;
-    top: 450px;
-    left: 720px;
-    width: 265px;
-    height: 96px;
+    top: 650px;
+    left: 1020px;
+    width: 583px;
+    height: 192px;
     z-index: 3;
 }
 .zakoncz-gre:hover {

@@ -18,7 +18,7 @@ const postac1 = ref("postać")
 //pozycja startowa gracza nr 1
 const krok_gracz1_na_planszy = ref(0);
 //roboczo do edycji quizów
-//const krok_gracz1_na_planszy = ref(15);
+//const krok_gracz1_na_planszy = ref(5);
 
 //zdefinowanie pozycji (mapy wszystkich pozycji) gracza nr 1
 const pozycje_pionka_gracza1 = new PawnMaps().pionek_gracza1;
@@ -33,7 +33,7 @@ const if_rzuc_kostka = ref(true)
 const if_widok_kostki = ref(true);
 
 //widoczność planszy pułapka
-const if_widok_pulapki = ref(false)
+const if_widok_pulapki = ref(false);
 
 //widoczność planszy quizz1
 const if_widok_quizz2 = ref(false); 
@@ -65,8 +65,8 @@ const isSet5 = ref(kolekcja_widoków_kostki[4])
 const isSet6 = ref(kolekcja_widoków_kostki[5])
 
 //pozycja pionka
-const pionek_left = ref(20)
-const pionek_top = ref(220)
+const pionek_left = ref(30)
+const pionek_top = ref(330)
 
 const mapa_pozycji_pionka = new PawnMaps()
 
@@ -266,9 +266,9 @@ const odejmijSzanse = () => {
 <style scoped>
 .tlo_main2 {
     background-image: url("../assets/8_plansza_poziom2.png");
-    background-size: 1280px 720px;
-    height: 720px;
-    width: 1280px;
+      background-size: 1920px 1080px;
+    height:1080px;
+    width: 1920px;
     top: 0px;
     left: 0px;
     position: absolute;
@@ -276,22 +276,22 @@ const odejmijSzanse = () => {
 
 .pionek1 {
     background-image: url("../assets/pionek1.png");
-    background-size: 80px 80px;
+     background-size: 116px 116px;
     background-repeat: no-repeat;
-    height: 80px;
-    width: 80px;
+    height: 116px;
+    width: 116px;
     position: absolute;
 
 }
 
 .kostka1 {
 
-    background-size: 150px 150px;
+    background-size: 250px 250px;
     background-repeat: no-repeat;
-    left: 1041px;
-    top: 467px;
-    height: 150px;
-    width: 150px;
+   left: 1549px;
+    top: 687px;
+    height: 250px;
+    width: 250px;
     position: absolute;
     z-index: 2;
 }
@@ -323,12 +323,12 @@ const odejmijSzanse = () => {
 
 .rzut2 {
     background-image: url("../assets/rzut_przycisk.png");
-    background-size: 251px 65px;
+    background-size: 333px 86px;
     background-repeat: no-repeat;
-    top: 367px;
-    left: 988px;
-    height: 67px;
-    width: 251px;
+   top: 560px;
+    left: 1502px;
+    height: 88px;
+    width: 333px;
     position: absolute;
     z-index: 2;
 }
@@ -343,32 +343,31 @@ const odejmijSzanse = () => {
 
 .szansa_ksztalt1 {
     background-image: url("../assets/zycie1.png");
-    background-size: 67px 67px;
+   background-size: 72px 72px;
     background-repeat: no-repeat;
 
-    height: 67px;
-    width: 67px;
+    height: 72px;
+    width: 72px;
     position: absolute;
     z-index: 2;
 }
-
 .szansa1 {
-    top: 267px;
-    left: 980px;
+    top: 387px;
+    left: 1530px;
 }
 
 .szansa2 {
-    top: 267px;
-    left: 1050px;
+    top: 387px;
+    left: 1630px;
 }
 
 .szansa3 {
-    top: 267px;
-    left: 1120px;
+    top: 387px;
+    left: 1730px;
 }
 
 .szansa4 {
-    top: 267px;
-    left: 1190px;
+    top: 387px;
+    left: 1830px;
 }
 </style>

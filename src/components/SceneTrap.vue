@@ -22,24 +22,24 @@ function koniecPulapki() {
 <style scoped>
 .pulapka1 {
     background-image: url("../assets/zasadzka.png");
-    background-size: 606px 261px;
+    background-size: 1212px 533px;
     background-repeat: no-repeat;
-    height: 261px;
-    width: 606px;
+    height:533px;
+    width: 1212px;
     position: absolute;
-    left: 320px;
-    top: 220px;
+    left: 100px;
+    top: 250px;
 }
 .przycisk_pulapka1 {
     background-image: url("../assets/przycisk_dalej_imie.png");
-    background-size: 150px 65px;
-    background-position: -2px -5px;
+    background-size: 301px 117px;
+    background-position: -1px -2px;
     background-repeat: no-repeat;
-    height: 58px;
-    width: 149px;
+    height: 117px;
+    width: 301px;
     position: absolute;
     left: 545px;
-    top: 380px;
+    top: 590px;
    
 }
 .przycisk_pulapka1:hover {

@@ -26,13 +26,13 @@ defineEmits(['gram-dalej','koniec-gry']);
 }
 .gram-jeszcze-1-level-one{
     background-image: url("../assets/gram_dalej1.png");
-    background-size: 265px 98px;
-    background-position: -1px -2px;
+    background-size: 583px 192px;
+    background-position: -1px -1px;
     position: absolute;
-    top: 450px;
+    top: 650px;
     left: 280px;
-    width: 265px;
-    height: 96px;
+    width: 583px;
+    height: 192px;
     z-index: 3;
 }
 .gram-jeszcze-1-level-one:hover {
@@ -47,7 +47,7 @@ defineEmits(['gram-dalej','koniec-gry']);
     background-position: -1px -1px;
     position: absolute;
     top: 650px;
-    left: 920px;
+    left: 980px;
     width: 583px;
     height: 192px;
     z-index: 3;
