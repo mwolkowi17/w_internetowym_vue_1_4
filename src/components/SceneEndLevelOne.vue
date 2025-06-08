@@ -7,8 +7,8 @@ defineEmits(['gram-dalej','koniec-gry']);
 
 <template>
 <div class="plansza-win-level-one" role="img" alt="plansza" aria-label="Plansza wygranej"></div>
-<button class="gram-jeszcze-1-level-one" @click="$emit('gram-dalej')" role="img" alt="ikona Gram Jeszcze" aria-label="przycisk gram jeszcze raz"></button>
-<button class="zakoncz-gre" @click="$emit('koniec-gry')" role="img" alt="ikona zakońćz grę" aria-label="przycisk zakończ grę"></button>
+<button class="gram-jeszcze-1-level-one anim1" @click="$emit('gram-dalej')" role="img" alt="ikona Gram Jeszcze" aria-label="przycisk gram jeszcze raz"></button>
+<button class="zakoncz-gre anim1" @click="$emit('koniec-gry')" role="img" alt="ikona zakońćz grę" aria-label="przycisk zakończ grę"></button>
 
 </template>
 
@@ -58,4 +58,18 @@ defineEmits(['gram-dalej','koniec-gry']);
 .zakoncz-gre:focus {
     outline: thick double #08e926;
 }   
+/* The animation code */
+@keyframes example {
+  /* from {background-color: red;}
+  to {background-color: yellow;} */
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+/* The element to apply the animation to */
+.anim1 {
+  
+  animation-name: example;
+  animation-duration: 1s;
+}
 </style>

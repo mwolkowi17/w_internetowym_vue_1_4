@@ -17,7 +17,7 @@ function koniecPulapki() {
 </script>
 <template>
     <div class="pulapka1" alt="plansza pułapki" role="img" aria-label="plansza pułapki"></div>
-    <button class="przycisk_pulapka1" @click="$emit('koniec-pulapka');koniecPulapki()" role="img" alt="ikona dalej" aria-label="Przycisk dalej"></button>
+    <button class="przycisk_pulapka1 anim1" @click="$emit('koniec-pulapka');koniecPulapki()" role="img" alt="ikona dalej" aria-label="Przycisk dalej"></button>
 </template>
 <style scoped>
 .pulapka1 {
@@ -47,5 +47,20 @@ function koniecPulapki() {
 }
 .przycisk_pulapka1:focus {
     outline: thick double #08e926;
+}
+
+/* The animation code */
+@keyframes example {
+  /* from {background-color: red;}
+  to {background-color: yellow;} */
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+/* The element to apply the animation to */
+.anim1 {
+  
+  animation-name: example;
+  animation-duration: 1s;
 }
 </style>

@@ -7,7 +7,7 @@ defineEmits(['koniec-instrukcja'])
 <template>
 <!-- <div class="tlo1" aria-label="Instrukcja gry"  ></div> -->
  <div class="tlo1" :aria-label="instrukcjaTekst"  ></div>
-<button class="dalej" @click="$emit('koniec-instrukcja')" role="img" alt="ikona Dalej" aria-label="Przycisk dalej"  ></button>
+<button class="dalej anim1" @click="$emit('koniec-instrukcja')" role="img" alt="ikona Dalej" aria-label="Przycisk dalej"  ></button>
 </template>
 <style>
 .tlo1{
@@ -36,5 +36,19 @@ defineEmits(['koniec-instrukcja'])
 .dalej:focus {
    /* border: 4px solid #08e926; */
    outline: thick double #08e926;
+}
+/* The animation code */
+@keyframes example {
+  /* from {background-color: red;}
+  to {background-color: yellow;} */
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+/* The element to apply the animation to */
+.anim1 {
+  
+  animation-name: example;
+  animation-duration: 1s;
 }
 </style>

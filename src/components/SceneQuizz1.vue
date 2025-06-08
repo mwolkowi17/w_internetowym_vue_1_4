@@ -121,13 +121,13 @@ function sprawdzOdpowiedz() {
     aria-label="przycisk sprawdź odpowiedź"></button>
   <div class="plansza-dobrze" v-if="if_odpowiedz_dobrze" role="img" alt="plansza dobra odpowiedź"
     aria-label="plansza odpowiedź prawidłowa"></div>
-  <button class="button-dalej-dobrze" v-if="if_button_dalej_dobrze" @click="if_odpowiedz_dobrze = false,
+  <button class="button-dalej-dobrze anim1" v-if="if_button_dalej_dobrze" @click="if_odpowiedz_dobrze = false,
     if_button_dalej_dobrze = false,
     $emit('koniec-quizz')" role="img"
     alt="przycisk dalej" aria-label="przycisk dalej - powrót do gry"></button>
   <div class="plansza-zle" v-if="if_odpowiedz_zle" role="img" alt="plansza zła odpowiedź"
     aria-label="plansza odpowiedź nieprawidłowa"></div>
-  <button class="button-dalej-dobrze" v-if="if_button_dalej_zle" @click="if_odpowiedz_zle = false,
+  <button class="button-dalej-dobrze anim1" v-if="if_button_dalej_zle" @click="if_odpowiedz_zle = false,
     if_button_dalej_zle = false,
     $emit('koniec-quizz')" role="img"
     alt="przycisk dalej" aria-label="przycisk dalej - powrót do gry"></button>
@@ -195,7 +195,7 @@ function sprawdzOdpowiedz() {
   font-family: "Proxima Nova", sans-serif;
   position: absolute;
   top: 305px;
-  left: 190px;
+  left: 205px;
 }
 
 .pole-zazn {
