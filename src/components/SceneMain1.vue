@@ -82,7 +82,9 @@ let kontrolka_ruch_na_planszy = true;
 // licznik ruchu na planszy - faktyczny ruch pionka
 let ruch_lokalny = 0;
 
+let x;
 
+const wyrzuconaWartoscKostki = ref("Kostka - ilość oczek: " + (x+1));
 
 function kostka_click() {
 
@@ -92,8 +94,8 @@ function kostka_click() {
     //========================================================================================
     if_widok_kostki.value = true
     console.log("rzut")
-    let x = metodyPomocnicze.rzucaj();
-
+    x = metodyPomocnicze.rzucaj();
+    wyrzuconaWartoscKostki.value = "Kostka - ilość oczek: " + (x + 1);
     let wynik_rzutu = x
     console.log(x)
     for (let i = 0; i < 6; i++) {
@@ -266,7 +268,7 @@ const odejmijSzanse = () => {
         'kostka1image4': isSet4,
         'kostka1image5': isSet5,
         'kostka1image6': isSet6
-    }" v-if="if_widok_kostki" role="img" alt="ikona widoku kostki" aria-label="Kostka do gry"></div>
+    }" v-if="if_widok_kostki" role="img" alt="ikona widoku kostki" :aria-label=wyrzuconaWartoscKostki></div>
     <SceneTrap v-if="if_widok_pulapki" @koniec-pulapka="if_widok_pulapki = false, koniecPulapki()"  />
     <SceneQuizz1 v-if="if_widok_quizz1" @koniec-quizz="if_widok_quizz1 = false, if_rzuc_kostka = true"
         @odejmij-szanse="odejmijSzanse" msg="Hej" :miejsceNaPlanszy="krok_gracz1_na_planszy"  />
