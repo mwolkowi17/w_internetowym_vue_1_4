@@ -11,6 +11,7 @@ function koniecPulapki() {
     
     // Emit the event to notify the parent component that the trap has ended
     console.log("Koniec pulapki");
+   
 }   
 
 

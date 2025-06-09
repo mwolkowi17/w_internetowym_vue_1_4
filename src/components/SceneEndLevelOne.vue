@@ -3,6 +3,9 @@ import { ref } from 'vue';
 
 
 defineEmits(['gram-dalej','koniec-gry']);
+
+const fanfary = new Audio(new URL('../assets/fanfary.mp3', import.meta.url).href);
+fanfary.play();
 </script>
 
 <template>

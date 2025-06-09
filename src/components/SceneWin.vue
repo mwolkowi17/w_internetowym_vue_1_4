@@ -2,16 +2,21 @@
 import { ref } from 'vue';
 
 defineOptions({
-  inheritAttrs: false
+    inheritAttrs: false
 })
 
-defineEmits(['jeszcze-raz','koniec-gry']);
+defineEmits(['jeszcze-raz', 'koniec-gry']);
+
+const fanfary = new Audio(new URL('../assets/fanfary.mp3', import.meta.url).href);
+fanfary.play();
 </script>
 
 <template>
-<div class="plansza-win" role="img" alt="plansza" aria-label="Plansza wygranej"></div>
-<button class="gram-jeszcze-1 anim1" @click="$emit('jeszcze-raz')" role="img" alt="ikona Gram Jeszcze" aria-label="przycisk gram jeszcze raz"></button>
-<button class="zakoncz-gre anim1" @click="$emit('koniec-gry')" role="img" alt="ikona zakońćz grę" aria-label="przycisk zakończ grę"></button>
+    <div class="plansza-win" role="img" alt="plansza" aria-label="Plansza wygranej"></div>
+    <button class="gram-jeszcze-1 anim1" @click="$emit('jeszcze-raz')" role="img" alt="ikona Gram Jeszcze"
+        aria-label="przycisk gram jeszcze raz"></button>
+    <button class="zakoncz-gre anim1" @click="$emit('koniec-gry')" role="img" alt="ikona zakońćz grę"
+        aria-label="przycisk zakończ grę"></button>
 </template>
 
 <style scoped>
@@ -25,7 +30,8 @@ defineEmits(['jeszcze-raz','koniec-gry']);
     position: absolute;
     z-index: 2;
 }
-.gram-jeszcze-1{
+
+.gram-jeszcze-1 {
     background-image: url("../assets/gram_jeszcze_raz_button.png");
     background-size: 583px 192px;
     background-position: -1px -2px;
@@ -36,13 +42,16 @@ defineEmits(['jeszcze-raz','koniec-gry']);
     height: 192px;
     z-index: 3;
 }
+
 .gram-jeszcze-1:hover {
     cursor: pointer;
-}   
+}
+
 .gram-jeszcze-1:focus {
     outline: thick double #08e926;
-}   
-.zakoncz-gre{
+}
+
+.zakoncz-gre {
     background-image: url("../assets/zakoncz_gre_button.png");
     background-size: 583px 192px;
     background-position: -1px -2px;
@@ -53,24 +62,33 @@ defineEmits(['jeszcze-raz','koniec-gry']);
     height: 192px;
     z-index: 3;
 }
+
 .zakoncz-gre:hover {
     cursor: pointer;
-}   
+}
+
 .zakoncz-gre:focus {
     outline: thick double #08e926;
-}   
+}
+
 /* The animation code */
 @keyframes example {
-  /* from {background-color: red;}
+
+    /* from {background-color: red;}
   to {background-color: yellow;} */
-  from {opacity: 0;}
-  to {opacity: 100;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
 }
 
 /* The element to apply the animation to */
 .anim1 {
-  
-  animation-name: example;
-  animation-duration: 1s;
+
+    animation-name: example;
+    animation-duration: 1s;
 }
 </style>

@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue';
 defineEmits(['jeszcze-raz','koniec-gry']);
+
+const przegrana_sound = new Audio(new URL('../assets/przegrana_gra.mp3', import.meta.url).href);
+przegrana_sound.play();
 </script>
 
 <template>

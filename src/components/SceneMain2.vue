@@ -8,10 +8,10 @@ import SceneQuizz2 from './SceneQuizz2.vue';
 
 
 defineOptions({
-  inheritAttrs: false
+    inheritAttrs: false
 })
 
-const emit= defineEmits(['koniec-etap2','przegrana2'])
+const emit = defineEmits(['koniec-etap2', 'przegrana2'])
 //roboczo tylko dla starej funkcji
 const postac1 = ref("postać")
 
@@ -36,7 +36,7 @@ const if_widok_kostki = ref(true);
 const if_widok_pulapki = ref(false);
 
 //widoczność planszy quizz1
-const if_widok_quizz2 = ref(false); 
+const if_widok_quizz2 = ref(false);
 //roboczo do edycji quizów
 //const if_widok_quizz2 = ref(true); 
 //widoki szans na planszy
@@ -76,6 +76,10 @@ let kontrolka_ruch_na_planszy = true;
 // licznik ruchu na planszy - faktyczny ruch pionka
 let ruch_lokalny = 0;
 
+let x;
+
+const wyrzuconaWartoscKostki = ref("Kostka - ilość oczek: " + (x + 1));
+
 function kostka_click() {
 
     if_rzuc_kostka.value = false //  ukryj przycisk rzuć kostką
@@ -84,8 +88,8 @@ function kostka_click() {
     //========================================================================================
     if_widok_kostki.value = true
     console.log("rzut")
-    let x = metodyPomocnicze.rzucaj();
-
+    x = metodyPomocnicze.rzucaj();
+    wyrzuconaWartoscKostki.value = "Kostka - ilość oczek: " + (x + 1);
     let wynik_rzutu = x
     console.log(x)
     for (let i = 0; i < 6; i++) {
@@ -189,12 +193,16 @@ function kostka_click() {
                 console.log("wpadka");
                 //  pokazuje planszę pułapki
                 setTimeout(() => {
-                if_widok_pulapki.value = true}, 1000)
+                    if_widok_pulapki.value = true;
+                    const sound_cofasz = new Audio(new URL('../assets/zla_odp.mp3', import.meta.url).href);
+                    sound_cofasz.play();
+                }, 1000)
 
             } else {
                 console.log("quiz");
                 setTimeout(() => {
-                if_widok_quizz2.value = true}, 1000);
+                    if_widok_quizz2.value = true
+                }, 1000);
             }
         }
     };
@@ -234,7 +242,7 @@ const odejmijSzanse = () => {
         if_szansa2.value = false;
         console.log("przegrałeś!!!");
     }
-    if( ilosc_szans.value === 0) {
+    if (ilosc_szans.value === 0) {
         if_szansa1.value = false;
         console.log("przegrałeś!!!");
         if_widok_quizz2.value = false;
@@ -244,12 +252,14 @@ const odejmijSzanse = () => {
 </script>
 <template>
     <div class="tlo_main2" role="img" alt="plansza gry poziom 2" aria-label="plansza gry planszowej- poziom 2"></div>
-    <div class="pionek1" :style="{ left: pionek_left + 'px', top: pionek_top + 'px' }" role="img" alt="ikona pionek" aria-label="Pionek"></div>
+    <div class="pionek1" :style="{ left: pionek_left + 'px', top: pionek_top + 'px' }" role="img" alt="ikona pionek"
+        aria-label="Pionek"></div>
     <div class="szansa1 szansa_ksztalt1" v-if="if_szansa1" role="img" alt="ikona szansy" aria-label="Szansa 1"></div>
     <div class="szansa2 szansa_ksztalt1" v-if="if_szansa2" role="img" alt="ikona szansy" aria-label="Szansa 2"></div>
     <div class="szansa3 szansa_ksztalt1" v-if="if_szansa3" role="img" alt="ikona szansy" aria-label="Szansa 3"></div>
     <div class="szansa4 szansa_ksztalt1" v-if="if_szansa4" role="img" alt="ikona szansy" aria-label="Szansa 4"></div>
-    <button class="rzut2" v-if="if_rzuc_kostka" @click="kostka_click()" role="img" alt="przycisk rzutu kostką" aria-label="przycisk rzutu kostką"></button>
+    <button class="rzut2" v-if="if_rzuc_kostka" @click="kostka_click()" role="img" alt="przycisk rzutu kostką"
+        aria-label="przycisk rzutu kostką"></button>
     <div class="kostka1" :class="{
         'kostka1image1': isSet1,
         'kostka1image2': isSet2,
@@ -257,17 +267,17 @@ const odejmijSzanse = () => {
         'kostka1image4': isSet4,
         'kostka1image5': isSet5,
         'kostka1image6': isSet6
-    }" v-if="if_widok_kostki" role="img" alt="ikona widoku kostki" aria-label="Kostka do gry"></div>
+    }" v-if="if_widok_kostki" role="img" alt="ikona widoku kostki" :aria-label=wyrzuconaWartoscKostki></div>
     <SceneTrap v-if="if_widok_pulapki" @koniec-pulapka="if_widok_pulapki = false, koniecPulapki()" rel="preload" />
     <SceneQuizz2 v-if="if_widok_quizz2" @koniec-quizz="if_widok_quizz2 = false, if_rzuc_kostka = true"
-        @odejmij-szanse="odejmijSzanse" msg="Hej" :miejsceNaPlanszy="krok_gracz1_na_planszy" rel="preload"  />
+        @odejmij-szanse="odejmijSzanse" msg="Hej" :miejsceNaPlanszy="krok_gracz1_na_planszy" rel="preload" />
 </template>
 
 <style scoped>
 .tlo_main2 {
     background-image: url("../assets/8_plansza_poziom2.png");
-      background-size: 1920px 1080px;
-    height:1080px;
+    background-size: 1920px 1080px;
+    height: 1080px;
     width: 1920px;
     top: 0px;
     left: 0px;
@@ -276,7 +286,7 @@ const odejmijSzanse = () => {
 
 .pionek1 {
     background-image: url("../assets/pionek1.png");
-     background-size: 116px 116px;
+    background-size: 116px 116px;
     background-repeat: no-repeat;
     height: 116px;
     width: 116px;
@@ -288,7 +298,7 @@ const odejmijSzanse = () => {
 
     background-size: 250px 250px;
     background-repeat: no-repeat;
-   left: 1549px;
+    left: 1549px;
     top: 687px;
     height: 250px;
     width: 250px;
@@ -325,7 +335,7 @@ const odejmijSzanse = () => {
     background-image: url("../assets/rzut_przycisk.png");
     background-size: 333px 86px;
     background-repeat: no-repeat;
-   top: 560px;
+    top: 560px;
     left: 1502px;
     height: 88px;
     width: 333px;
@@ -343,7 +353,7 @@ const odejmijSzanse = () => {
 
 .szansa_ksztalt1 {
     background-image: url("../assets/zycie1.png");
-   background-size: 72px 72px;
+    background-size: 72px 72px;
     background-repeat: no-repeat;
 
     height: 72px;
@@ -351,6 +361,7 @@ const odejmijSzanse = () => {
     position: absolute;
     z-index: 2;
 }
+
 .szansa1 {
     top: 387px;
     left: 1530px;

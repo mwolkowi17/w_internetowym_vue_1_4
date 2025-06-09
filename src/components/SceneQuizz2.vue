@@ -98,6 +98,8 @@ function sprawdzOdpowiedz() {
         is_krzyzyk1.value = false;
         is_krzyzyk2.value = false;
         is_krzyzyk3.value = false
+        const sound_dobrze =  new Audio(new URL('../assets/Dobra_odp.mp3', import.meta.url).href);
+        sound_dobrze.play();
 
     } else {
         console.log("Odpowiedź zła!!!!");
@@ -107,6 +109,8 @@ function sprawdzOdpowiedz() {
         is_krzyzyk1.value = false;
         is_krzyzyk2.value = false;
         is_krzyzyk3.value = false;
+        const sound_zle =  new Audio(new URL('../assets/zla_odp.mp3', import.meta.url).href);
+        sound_zle.play();
         emit('odejmij-szanse');
     }
 }
