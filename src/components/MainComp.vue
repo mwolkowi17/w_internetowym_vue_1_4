@@ -43,6 +43,7 @@ function change_level_one_choise() {
 
 function change_level_two_choise() {
     if_level_one_choise.value = false;
+    if_level_two_choise.value = false;
     if_main2.value = true;
     console.log("wybrano poziom 2")
 }

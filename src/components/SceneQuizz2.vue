@@ -249,7 +249,8 @@ function sprawdzOdpowiedz() {
 }
 
 .pole-zazn:focus {
-    outline: thick double #08e926 !important;
+    /* outline: thick double #08e926 !important; */
+    outline: 8px solid #08e926 !important;
 }
 
 .pole1 {
@@ -352,7 +353,8 @@ function sprawdzOdpowiedz() {
 
 .button-dalej:focus {
 
-    outline: thick double #08e926 !important;
+    /* outline: thick double #08e926 !important; */
+    outline: 8px solid #08e926 !important;
 }
 
 .plansza-dobrze {
@@ -395,7 +397,8 @@ function sprawdzOdpowiedz() {
 }
 
 .button-dalej-dobrze:focus {
-    outline: thick double #08e926 !important;
+    /* outline: thick double #08e926 !important; */
+    outline: 8px solid #08e926 !important;
 }
 
 /* The animation code */

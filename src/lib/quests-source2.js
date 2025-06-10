@@ -63,18 +63,18 @@ export class Quests2 {
           [
             "muszą być różne",
             "wybierasz spośród dwóch haseł,<br>   których stale używasz",
-            "nie klikasz, emailem do znajomych",
+            "są od lat niezmieniane",
             1,
           ],
           [
             "wybierasz spośród dwóch haseł,<br> których stale używasz",
             "muszą być różne",
-            "nie klikasz, emailem do znajomych",
+            "są od lat niezmieniane",
             2,
           ],
           [
             "wybierasz spośród dwóch haseł,<br> których stale używasz",
-            "nie klikasz, emailem do znajomych",
+            "są od lat niezmieniane",
             "muszą być różne",
             3,
           ],
@@ -154,7 +154,7 @@ export class Quests2 {
           ],
         ],
         odpowiedz: 1,
-        tresc: "Na koniec pracy w siecie zawsze:",
+        tresc: "Na koniec pracy w sieci zawsze:",
       },
       {
         id: 12,

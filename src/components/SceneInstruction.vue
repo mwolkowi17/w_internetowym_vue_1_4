@@ -35,7 +35,8 @@ defineEmits(['koniec-instrukcja'])
 
 .dalej:focus {
    /* border: 4px solid #08e926; */
-   outline: thick double #08e926;
+   /* outline: thick double #08e926; */
+   outline: 8px solid #08e926;
 }
 /* The animation code */
 @keyframes example {

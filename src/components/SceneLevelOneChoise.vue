@@ -33,7 +33,8 @@ defineEmits(['wybor-levelu1']);
     cursor: pointer;
 }
 .level-one-button:focus {
-    outline: thick double #08e926;
+    /* outline: thick double #08e926; */
+    outline: 8px solid #08e926;
 }
 
 .level-two-button{

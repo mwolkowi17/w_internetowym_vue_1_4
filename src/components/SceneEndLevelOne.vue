@@ -42,7 +42,8 @@ fanfary.play();
     cursor: pointer;
 }   
 .gram-jeszcze-1-level-one:focus {
-    outline: thick double #08e926;
+    /* outline: thick double #08e926; */
+    outline: 8px solid #08e926;
 }   
 .zakoncz-gre{
     background-image: url("../assets/zakoncz_gre_button.png");
@@ -59,7 +60,8 @@ fanfary.play();
     cursor: pointer;
 }   
 .zakoncz-gre:focus {
-    outline: thick double #08e926;
+    /* outline: thick double #08e926; */
+    outline: 8px solid #08e926;
 }   
 /* The animation code */
 @keyframes example {

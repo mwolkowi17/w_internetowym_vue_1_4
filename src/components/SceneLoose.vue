@@ -39,7 +39,8 @@ przegrana_sound.play();
     cursor: pointer;
 }
 .gram-jeszcze-1:focus {
-    outline: thick double #08e926;
+    /* outline: thick double #08e926; */
+    outline: 8px solid #08e926;
 }
 .zakoncz-gre{
     background-image: url("../assets/zakoncz_gre_button.png");
@@ -57,7 +58,8 @@ przegrana_sound.play();
 }
 
 .zakoncz-gre:focus {
-    outline: thick double #08e926;
+    /* outline: thick double #08e926; */
+    outline: 8px solid #08e926;
 }
 /* The animation code */
 @keyframes example {
