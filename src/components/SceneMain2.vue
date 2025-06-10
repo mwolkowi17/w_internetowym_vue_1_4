@@ -251,15 +251,15 @@ const odejmijSzanse = () => {
 }
 </script>
 <template>
-    <div class="tlo_main2" role="img" alt="plansza gry poziom 2" aria-label="plansza gry planszowej- poziom 2"></div>
-    <div class="pionek1" :style="{ left: pionek_left + 'px', top: pionek_top + 'px' }" role="img" alt="ikona pionek"
+    <div class="tlo_main2" role="img" alt="tło" aria-label="plansza gry planszowej- poziom 2"></div>
+    <div class="pionek1" :style="{ left: pionek_left + 'px', top: pionek_top + 'px' }" role="img" alt="ikona"
         aria-label="Pionek"></div>
     <div class="szansa1 szansa_ksztalt1" v-if="if_szansa1" role="img" alt="ikona szansy" aria-label="Szansa 1"></div>
     <div class="szansa2 szansa_ksztalt1" v-if="if_szansa2" role="img" alt="ikona szansy" aria-label="Szansa 2"></div>
     <div class="szansa3 szansa_ksztalt1" v-if="if_szansa3" role="img" alt="ikona szansy" aria-label="Szansa 3"></div>
     <div class="szansa4 szansa_ksztalt1" v-if="if_szansa4" role="img" alt="ikona szansy" aria-label="Szansa 4"></div>
-    <button class="rzut2" v-if="if_rzuc_kostka" @click="kostka_click()" role="img" alt="przycisk rzutu kostką"
-        aria-label="przycisk rzutu kostką"></button>
+    <button class="rzut2" v-if="if_rzuc_kostka" @click="kostka_click()" role="img" alt="przycisk"
+        aria-label="Rzuć kostką"></button>
     <div class="kostka1" :class="{
         'kostka1image1': isSet1,
         'kostka1image2': isSet2,

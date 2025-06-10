@@ -4,9 +4,9 @@ defineEmits(['wybor-levelu1']);
 </script>
 
 <template>
-    <div class="tlo-level1"></div>
-    <button class="level-one-button" @click="$emit('wybor-levelu1')"  role="img" alt="ikona Level Pierwszy" aria-label="Przycisk poziom jeden" ></button>
-    <button class="level-two-button"   role="img" alt="ikona Level Drugi nieaktywny" aria-label="Przycisk poziom dwa" disabled ></button>
+    <div class="tlo-level1" role="img" alt="tło" aria-label="Wybór poziomu"></div>
+    <button class="level-one-button" @click="$emit('wybor-levelu1')"  role="img" alt="przycisk" aria-label="Przycisk poziom jeden" ></button>
+    <button class="level-two-button"   role="img" alt="przycisk" aria-label="Przycisk poziom dwa nieaktywny" disabled ></button>
 </template>
 
 <style scoped>

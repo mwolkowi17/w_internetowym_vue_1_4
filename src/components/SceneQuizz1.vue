@@ -100,8 +100,8 @@ function sprawdzOdpowiedz() {
 
 </script>
 <template>
-  <div class="planszaQuizz1 " :class="eksp1[quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).pytanie]"
-    alt="quizz" aria-label="plansza quizzu"></div>
+  <div class="planszaQuizz1 " :class="eksp1[quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).pytanie]" role="img"
+    alt="tło" aria-label="plansza - quizz"></div>
 
   <p class="pytanie1 anim1">{{ quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).tresc }}</p>
   <div class="krzyzyk" :class="{ 'krzyzyk1': is_krzyzyk1, 'krzyzyk2': is_krzyzyk2 }" role="img" alt="zaznaczenie odpowiedzi"
@@ -134,7 +134,7 @@ function sprawdzOdpowiedz() {
   <button class="button-dalej-dobrze anim1" v-if="if_button_dalej_zle" @click="if_odpowiedz_zle = false,
     if_button_dalej_zle = false,
     $emit('koniec-quizz')" role="img"
-    alt="przycisk dalej" aria-label="przycisk dalej - powrót do gry"></button>
+    alt="przycisk" aria-label="dalej - powrót do gry"></button>
 
 
 </template>

@@ -9,9 +9,9 @@ fanfary.play();
 </script>
 
 <template>
-<div class="plansza-win-level-one" role="img" alt="plansza" aria-label="Plansza wygranej"></div>
-<button class="gram-jeszcze-1-level-one anim1" @click="$emit('gram-dalej')" role="img" alt="ikona Gram Jeszcze" aria-label="przycisk gram jeszcze raz"></button>
-<button class="zakoncz-gre anim1" @click="$emit('koniec-gry')" role="img" alt="ikona zakońćz grę" aria-label="przycisk zakończ grę"></button>
+<div class="plansza-win-level-one" role="img" alt="plansza" aria-label="BRAWO, udało Ci się ukończyć poziom 1. Chcesz grać dalej?"></div>
+<button class="gram-jeszcze-1-level-one anim1" @click="$emit('gram-dalej')" role="img" alt="przycisk" aria-label="gram dalej"></button>
+<button class="zakoncz-gre anim1" @click="$emit('koniec-gry')" role="img" alt="przycisk" aria-label="zakończ grę"></button>
 
 </template>
 

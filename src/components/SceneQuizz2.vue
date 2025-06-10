@@ -118,7 +118,7 @@ function sprawdzOdpowiedz() {
 </script>
 <template>
     <div class="planszaQuizz1 " :class="eksp1[quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).pytanie]"
-        role="img" alt="quizz" aria-label="plansza quizzu"></div>
+        role="img" alt="tło" aria-label="plansza - quizz"></div>
     <!-- <div class="planszaQuizz1 " :class="eksp1[9]"></div> -->
     <p class="pytanie1 anim1">{{ quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).tresc }}</p>
     <div class="krzyzyk" :class="{ 'krzyzyk1': is_krzyzyk1, 'krzyzyk2': is_krzyzyk2, 'krzyzyk3': is_krzyzyk3 }"
@@ -150,19 +150,19 @@ function sprawdzOdpowiedz() {
         is_krzyzyk2 = false,
         if_button_dalej = true,
         zaznaczenie3()
-        " role="img" alt="pole zaznaczenia" aria-label="zaznacz odpowiedź 3"></button>
+        " role="img" alt="przycisk" aria-label="zaznacz odpowiedź 3"></button>
 
     <!-- <p class="odpowiedz odpowiedz3">{{
         quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).odpowiedz_text[nr_zestawu][2] }}</p> -->
     <p class="odpowiedz odpowiedz3 anim1"
         v-html="quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).odpowiedz_text[nr_zestawu][2]"></p>
-    <button class="button-dalej" v-if="if_button_dalej" @click="sprawdzOdpowiedz()" role="img" alt="przycisk sprawdź"
+    <button class="button-dalej" v-if="if_button_dalej" @click="sprawdzOdpowiedz()" role="img" alt="przycisk"
         aria-label="przycisk sprawdź odpowiedź"></button>
     <div class="plansza-dobrze" v-if="if_odpowiedz_dobrze" role="img" alt="plansza dobra odpowiedź"
         aria-label="plansza odpowiedź prawidłowa"></div>
     <button class="button-dalej-dobrze anim1" v-if="if_button_dalej_dobrze" @click="if_odpowiedz_dobrze = false,
         if_button_dalej_dobrze = false,
-        $emit('koniec-quizz')" role="img" alt="przycisk dalej" aria-label="przycisk dalej - powrót do gry"></button>
+        $emit('koniec-quizz')" role="img" alt="przycisk" aria-label="przycisk dalej - powrót do gry"></button>
     <div class="plansza-zle" v-if="if_odpowiedz_zle" role="img" alt="plansza zła odpowiedź"
         aria-label="plansza odpowiedź nieprawidłowa"></div>
     <button class="button-dalej-dobrze anim1" v-if="if_button_dalej_zle" @click="if_odpowiedz_zle = false,

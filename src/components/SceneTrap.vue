@@ -17,7 +17,7 @@ function koniecPulapki() {
 
 </script>
 <template>
-    <div class="pulapka1" alt="cofasz się o dwa pola" role="img" aria-label="plansza pułapki"></div>
+    <div class="pulapka1" alt="cofasz się o dwa pola" role="img" aria-label="Zasadzka - cofasz się dwa pola"></div>
     <button class="przycisk_pulapka1 anim1" @click="$emit('koniec-pulapka');koniecPulapki()" role="img" alt="ikona dalej" aria-label="Przycisk dalej"></button>
 </template>
 <style scoped>

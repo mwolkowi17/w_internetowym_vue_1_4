@@ -3,9 +3,9 @@ import { ref } from 'vue';
 defineEmits(['wybor-levelu1','wybor-levelu2']);
 </script>
 <template>
-<div class="tlo-level2" role="img" alt="plansza wyboru poziomu" aria-label="plansza wyboru poziomu"></div>
-   <button class="level-one-button" @click="$emit('wybor-levelu1')" role="img" alt="ikona Level Pierwszy" aria-label="Przycisk poziom jeden"></button>
-   <button class="level-two-button" @click="$emit('wybor-levelu2')"role="img" alt="ikona Level Drugi" aria-label="Przycisk poziom dwa"></button>
+<div class="tlo-level2" role="img" alt="tło" aria-label="plansza wyboru poziomu"></div>
+   <button class="level-one-button" @click="$emit('wybor-levelu1')" role="img" alt="przycisk" aria-label="wybierz poziom jeden"></button>
+   <button class="level-two-button" @click="$emit('wybor-levelu2')" role="img" alt="przycisk" aria-label="wybierz poziom dwa"></button>
 </template>
 <style scoped>
 .tlo-level2 {
