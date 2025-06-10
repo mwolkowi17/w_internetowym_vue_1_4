@@ -251,14 +251,14 @@ const odejmijSzanse = () => {
 }
 </script>
 <template>
-    <div class="tlo_main2" role="img" alt="tło" aria-label="plansza gry planszowej- poziom 2"></div>
+    <div class="tlo_main2" role="img" alt="tło" aria-label="gra planszowa - poziom 2"></div>
     <div class="pionek1" :style="{ left: pionek_left + 'px', top: pionek_top + 'px' }" role="img" alt="ikona"
         aria-label="Pionek"></div>
     <div class="szansa1 szansa_ksztalt1" v-if="if_szansa1" role="img" alt="ikona szansy" aria-label="Szansa 1"></div>
     <div class="szansa2 szansa_ksztalt1" v-if="if_szansa2" role="img" alt="ikona szansy" aria-label="Szansa 2"></div>
     <div class="szansa3 szansa_ksztalt1" v-if="if_szansa3" role="img" alt="ikona szansy" aria-label="Szansa 3"></div>
     <div class="szansa4 szansa_ksztalt1" v-if="if_szansa4" role="img" alt="ikona szansy" aria-label="Szansa 4"></div>
-    <button class="rzut2" v-if="if_rzuc_kostka" @click="kostka_click()" role="img" alt="przycisk"
+    <button class="rzut2 anim1" v-if="if_rzuc_kostka" @click="kostka_click()" role="img" alt="przycisk"
         aria-label="Rzuć kostką"></button>
     <div class="kostka1" :class="{
         'kostka1image1': isSet1,
@@ -365,21 +365,36 @@ const odejmijSzanse = () => {
 
 .szansa1 {
     top: 387px;
-    left: 1530px;
+    left: 1490px;
 }
 
 .szansa2 {
     top: 387px;
-    left: 1630px;
+    left: 1590px;
 }
 
 .szansa3 {
     top: 387px;
-    left: 1730px;
+    left: 1690px;
 }
 
 .szansa4 {
     top: 387px;
-    left: 1830px;
+    left: 1790px;
+}
+
+/* The animation code */
+@keyframes example {
+  /* from {background-color: red;}
+  to {background-color: yellow;} */
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+/*anim1* The element to apply the animation to */
+.anim1 {
+  
+  animation-name: example;
+  animation-duration: 1s;
 }
 </style>
