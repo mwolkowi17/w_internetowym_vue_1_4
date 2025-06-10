@@ -335,7 +335,7 @@ function sprawdzOdpowiedz() {
 }
 
 .button-dalej {
-    background-image: url("../assets/sprawdź_odpwowiedz_button1.png");
+    background-image: url("../assets/sprawdz_odpwowiedz_button1.png");
     background-size: 394px 87px;
     background-repeat: no-repeat;
     top: 835px;
