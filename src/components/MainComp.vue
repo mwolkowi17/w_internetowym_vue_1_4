@@ -37,7 +37,12 @@ function change_instrukcja() {
 }
 
 function change_level_one_choise() {
+    console.log("wybrano level 1")
+    if_end_scene_level_one.value=false;
+    if_loose_after_level_one.value=false
     if_level_one_choise.value = false;
+    if_level_two_choise.value = false;
+    if_main2.value=false
     if_main1.value = true;
 }
 
@@ -88,6 +93,7 @@ function graj_jeszcze_raz() {
 function graj_jeszcze_raz_po_scenie1() {
     console.log('graj_jeszcze_raz po scenie1')
     if_loose_after_level_one.value = false;
+    if_end_scene_level_one.value=false
     if_win.value = false;
     if_main1.value = false;
     if_main2.value = false;
@@ -102,6 +108,7 @@ function koniec_gry() {
     if_main2.value = false;
     if_level_two_choise.value = false;
     if_end_scene_level_one.value = false;
+    if_loose_after_level_one.value=false;
     if_plansza_poczatkowa.value = true;
 }
 

@@ -32,7 +32,7 @@ export class Quests {
           ["paczki", "informacje", 2],
         ],
         odpowiedz: 1,
-        tresc: "Interentem można przesyłać:",
+        tresc: "Internetem można przesyłać:",
       },
       {
         id: 4,
