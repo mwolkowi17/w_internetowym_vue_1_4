@@ -47,10 +47,11 @@ function change_level_one_choise() {
 }
 
 function change_level_two_choise() {
+    console.log("wybrano poziom 2")
     if_level_one_choise.value = false;
     if_level_two_choise.value = false;
+    if_main1.value = false;
     if_main2.value = true;
-    console.log("wybrano poziom 2")
 }
 
 function koniec_etapu1() {

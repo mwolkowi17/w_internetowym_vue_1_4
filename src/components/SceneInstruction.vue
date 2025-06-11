@@ -5,7 +5,6 @@ defineEmits(['koniec-instrukcja'])
 
 </script>
 <template>
-<!-- <div class="tlo1" aria-label="Instrukcja gry"  ></div> -->
  <div class="tlo1" role="img" alt="tło" :aria-label="instrukcjaTekst"  ></div>
 <button class="dalej anim1" @click="$emit('koniec-instrukcja')" role="img" alt="przycisk" aria-label="Przycisk dalej"  ></button>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-import { ref,onMounted,onUnmounted } from 'vue'
+import { ref } from 'vue'
 
 const emit = defineEmits(['koniec-planszy'])
  const stageParent = ref(null)
