@@ -197,6 +197,7 @@ function sprawdzOdpowiedz() {
   font-style: bold;
   font-weight: 700;
   font-family: "Proxima Nova", sans-serif;
+  white-space: nowrap;
   position: absolute;
   top: 305px;
   left: 205px;
@@ -262,6 +263,7 @@ function sprawdzOdpowiedz() {
   font-style: bold;
   font-weight: 700;
   font-family: "Proxima Nova", sans-serif;
+  white-space: nowrap;
   position: absolute;
 
 }
