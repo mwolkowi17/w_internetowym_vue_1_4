@@ -10,6 +10,7 @@ const props = defineProps({
   miejsceNaPlanszy: Number,
   msg: String
 });
+
 const emit = defineEmits(['koniec-quizz',
   'odejmij-szanse']);
 

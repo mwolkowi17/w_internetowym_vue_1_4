@@ -17,14 +17,12 @@ function openFullscreen() {
   } else {
     console.log('Fullscreen API not supported or ref not found');
   }
-
-
-      }
+  }
 </script>
 
 <template>
     <div ref="stageParent" class="tlo" role="img" alt="plansza" aria-label="W internetowym labiryncie"></div>
-    <button class="start" @click="$emit('koniec-planszy'), openFullscreen()" role="img" alt="przycisk" aria-label="przycisk start"></button>
+    <button class="start" @click="$emit('koniec-planszy')" role="img" alt="przycisk" aria-label="przycisk start"></button>
 </template>
 
 <style>
